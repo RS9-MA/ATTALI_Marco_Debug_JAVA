@@ -17,17 +17,16 @@ public class AnalyticsCounter {
 			FileWriter writer = new FileWriter ("result.out");){
 			String line = reader.readLine();
 
-			int headCount = 0;
 			while (line != null) {
 				logger.log(Level.INFO, "Something went wrong: {0} ", line);
 				if (line.equals("headache")) {
-					headCount++;
-					logger.log(Level.INFO, "number of headaches: {0}", headCount);
+					headacheCount++;
+					logger.log(Level.INFO, "number of headaches: {0}", headacheCount);
 				}
-				else if (line.equals("rush")) {
+				else if (line.equals("rash")) {
 					rashCount++;
 				}
-				else if (line.contains("pupils")) {
+				else if (line.equals("dialated pupils")) {
 					pupilCount++;
 				}
 

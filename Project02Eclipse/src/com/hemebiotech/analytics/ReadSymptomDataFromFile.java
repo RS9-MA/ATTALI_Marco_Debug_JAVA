@@ -16,8 +16,7 @@ import java.util.stream.Stream;
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private String filepath;
-
-	/**
+	/*
 	 * 
 	 * @param filepath a full or partial path to file with symptom strings in it,
 	 *                 one per line
